@@ -1,0 +1,18 @@
+stages:
+  - deploy
+
+deploy_production:
+  stage: deploy
+  tags:
+    - sia
+  only:
+    - master
+  script:
+    - set -e
+    - test -d /var/www/html/sia
+    - rsync -av --delete --exclude ".git" --exclude "node_modules" --exclude ".env" ./ /var/www/html/sia/
+    - cd /var/www/html/sia
+    - npm ci --omit=dev
+    - sudo systemctl restart sia
+    - sudo systemctl status sia --no-pager -l
+    - curl -I http://127.0.0.1:3000
