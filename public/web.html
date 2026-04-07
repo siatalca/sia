@@ -1,0 +1,188 @@
+﻿<!doctype html>
+<html lang='es'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Sitios web Talca | SIA</title>
+  <meta name='description' content='Sitios web en Talca con diseno premium, conversion y enfoque comercial. Tu web es tu vendedor 24/7.'>
+  <link rel='stylesheet' href='css/styles.css'>
+</head>
+<body>
+  <div class='page'>
+    <header class='site-header'>
+      <div class='container header-inner'>
+        <a class='logo' href='index.html' aria-label='SIA - Soluciones Informaticas Avanzadas'>
+          <img src='assets/logo-sia.png' alt='Logo SIA'>
+          <span class='logo-text'>SIA</span>
+        </a>
+        <div class='nav-group'>
+          <button class='nav-toggle' aria-expanded='false' aria-label='Abrir menu'>Menu</button>
+          <nav class='nav-links'>
+            <a class='nav-link' href='index.html'>Inicio</a>
+            <a class='nav-link' href='servicios.html'>Servicios</a>
+            <a class='nav-link' href='seguridad.html'>Camaras/Alarmas</a>
+            <a class='nav-link' href='web.html'>Web</a>
+            <a class='nav-link' href='nosotros.html'>Nosotros</a>
+            <a class='nav-link' href='contacto.html'>Contacto</a>
+            <a class='nav-link' href='blog.html'>Blog/FAQ</a>
+          </nav>
+        </div>
+        <a class='btn primary nav-cta' data-wa data-message='Hola, soy [Nombre]. Quiero cotizar un sitio web. Estoy en [Sector].'>Cotizar por WhatsApp</a>
+      </div>
+    </header>
+
+    <main>
+      <section class='hero container reveal'>
+        <div class='hero-text'>
+          <p class='eyebrow'>Sitios web premium</p>
+          <h1>Tu web es tu vendedor 24/7</h1>
+          <p class='lead'>Diseno limpio, alto contraste y conversion real para negocios locales.</p>
+          <div class='hero-actions'>
+            <a class='btn primary' data-wa data-message='Hola, soy [Nombre]. Quiero una propuesta web. Estoy en [Sector].'>Pedir propuesta</a>
+            <a class='btn secondary' href='#form-web'>Solicitar ahora</a>
+          </div>
+          <p class='hero-note'>Sitios web con identidad premium y enfoque comercial.</p>
+        </div>
+        <div class='hero-card'>
+          <h2>Incluye</h2>
+          <ul class='checklist'>
+            <li>Arquitectura y contenido</li>
+            <li>Diseno responsive</li>
+            <li>Integracion con WhatsApp</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class='section'>
+        <div class='container'>
+          <div class='section-header'>
+            <h2>Tipos de sitio</h2>
+            <p>Soluciones segun tus objetivos y etapa de negocio.</p>
+          </div>
+          <div class='grid'>
+            <div class='card reveal'>
+              <h3>Landing de servicios</h3>
+              <p>Una pagina directa para generar cotizaciones rapidas.</p>
+            </div>
+            <div class='card reveal'>
+              <h3>Sitio Pyme</h3>
+              <p>Secciones completas para presentar tu negocio con claridad.</p>
+            </div>
+            <div class='card reveal'>
+              <h3>Sitio vitrina + contacto</h3>
+              <p>Catalogo simple y formulario listo para convertir.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class='section alt'>
+        <div class='container'>
+          <div class='section-header'>
+            <h2>Proceso claro</h2>
+            <p>Ordenado, rapido y con foco en resultados.</p>
+          </div>
+          <div class='grid'>
+            <div class='card reveal'>
+              <h3>1. Diagnostico</h3>
+              <p>Entendemos tu negocio y objetivos.</p>
+            </div>
+            <div class='card reveal'>
+              <h3>2. Diseno</h3>
+              <p>Propuesta visual premium con jerarquia clara.</p>
+            </div>
+            <div class='card reveal'>
+              <h3>3. Lanzamiento</h3>
+              <p>Publicacion y ajustes finales con seguimiento.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class='section' id='form-web'>
+        <div class='container'>
+          <div class='section-header'>
+            <h2>Pedir propuesta</h2>
+            <p>Cuantanos tu idea y te contactamos con un plan claro.</p>
+          </div>
+          <form class='form-card' data-endpoint='/api/web_requests'>
+            <div class='form-grid'>
+              <div>
+                <label for='website_type'>Tipo de web</label>
+                <select id='website_type' name='website_type' required>
+                  <option value=''>Selecciona una opcion</option>
+                  <option value='landing'>Landing de servicios</option>
+                  <option value='pyme'>Sitio Pyme</option>
+                  <option value='vitrina'>Sitio vitrina + contacto</option>
+                </select>
+              </div>
+              <div>
+                <label for='business'>Rubro / negocio</label>
+                <input id='business' name='business' type='text' placeholder='Ej: tienda, clinica, servicios' required>
+              </div>
+              <div>
+                <label for='goal'>Objetivo principal</label>
+                <input id='goal' name='goal' type='text' placeholder='Ej: generar leads, vender, informar'>
+              </div>
+              <div>
+                <label for='web_phone'>WhatsApp</label>
+                <input id='web_phone' name='phone' type='tel' placeholder='+56 9 0000 0000' required>
+              </div>
+              <div>
+                <label for='web_email'>Email</label>
+                <input id='web_email' name='email' type='email' placeholder='correo@empresa.cl'>
+              </div>
+            </div>
+            <div class='form-grid full'>
+              <div>
+                <label for='web_message'>Mensaje</label>
+                <textarea id='web_message' name='message' placeholder='Describe lo que necesitas'></textarea>
+              </div>
+            </div>
+            <div class='hp-field'>
+              <label for='website'>Website</label>
+              <input id='website' name='website' type='text' autocomplete='off'>
+            </div>
+            <div class='form-actions'>
+              <button class='btn primary' type='submit'>Enviar solicitud</button>
+              <span class='form-status'></span>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class='site-footer'>
+      <div class='container footer-grid'>
+        <div>
+          <div class='footer-title'>SIA - Soluciones Informaticas Avanzadas</div>
+          <p class='footer-link'>Talca y alrededores, Chile</p>
+          <p class='footer-link'>Dominio: siatalca.cl</p>
+        </div>
+        <div>
+          <div class='footer-title'>Contacto</div>
+          <p class='footer-link'>WhatsApp: +56 9 4138 5151</p>
+          <p class='footer-link'>Correo: siatalca@gmail.com</p>
+        </div>
+        <div>
+          <div class='footer-title'>Horarios</div>
+          <p class='footer-link'>Sin mensualidad: 09:00 a 19:00</p>
+          <p class='footer-link'>Con mensualidad: segun contrato</p>
+        </div>
+        <div>
+          <div class='footer-title'>Links</div>
+          <p><a class='footer-link' href='servicios.html'>Servicios</a></p>
+          <p><a class='footer-link' href='seguridad.html'>Camaras/Alarmas</a></p>
+          <p><a class='footer-link' href='web.html'>Web</a></p>
+          <p><a class='footer-link' href='contacto.html'>Contacto</a></p>
+        </div>
+      </div>
+      <div class='container footer-bottom'>(c) <span id='year'>2026</span> SIA. Todos los derechos reservados.</div>
+    </footer>
+  </div>
+
+  <a class='whatsapp-float' data-wa data-message='Hola, soy [Nombre]. Quiero cotizar un sitio web. Estoy en [Sector].'>WhatsApp</a>
+
+  <script defer src='js/main.js'></script>
+</body>
+</html>
