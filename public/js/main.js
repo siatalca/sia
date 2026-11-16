@@ -1,5 +1,5 @@
 ﻿(() => {
-  const WA_NUMBER = '56941385151';
+  const WA_NUMBER = '56958484121';
   const DEFAULT_MESSAGE = 'Hola, soy [Nombre]. Quiero cotizar [Servicio/Plan]. Estoy en [Sector].';
   const API_BASE = window.SIA_API_BASE || 'http://localhost:3000';
 
