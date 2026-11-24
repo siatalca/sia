@@ -1,7 +1,9 @@
 ﻿(() => {
   const WA_NUMBER = '56958484121';
   const DEFAULT_MESSAGE = 'Hola, soy [Nombre]. Quiero cotizar [Servicio/Plan]. Estoy en [Sector].';
-  const API_BASE = window.SIA_API_BASE || 'http://localhost:3000';
+  // Por defecto, el mismo origen del sitio: en producción Nginx pasa /api/ al Node y en local Express sirve
+  // public/ y la API en el mismo puerto. Producción no define SIA_API_BASE (M-046).
+  const API_BASE = window.SIA_API_BASE || '';
 
   const setWhatsAppLinks = () => {
     document.querySelectorAll('[data-wa]').forEach((link) => {
