@@ -11,7 +11,7 @@ const webRoutes = require('./routes/webquote');
 const planRoutes = require('./routes/plans');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3126;
 const CORS_ORIGIN = process.env.CORS_ORIGIN || '*';
 
 app.disable('x-powered-by');

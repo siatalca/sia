@@ -15,4 +15,4 @@ deploy_production:
     - npm ci --omit=dev
     - sudo systemctl restart sia
     - sudo systemctl status sia --no-pager -l
-    - curl -I http://127.0.0.1:3000
+    - curl -I http://127.0.0.1:3126
